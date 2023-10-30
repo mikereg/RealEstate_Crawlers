@@ -85,7 +85,7 @@ while count < 1000:
 df = pd.DataFrame(prop_list)
 
 #df['Features'] = pp.clean_Feats(df)
-feats = ['view', 'town view', 'sea view', 'valley view', 'finished', 'furnished', 'garage', 'terrace', 'balcony', 'pool', 'parking', 'garden', 'yard']
+feats = ['air conditioning', 'ground floor', 'open plan', 'permit in hand', 'main street', 'furnished', 'lift', 'modern', 'kitchenette', 'storage', 'parking', 'cctv', 'basement']
 for f in feats:
     df[f] = pp.extract_FeatList(df, f)
 
