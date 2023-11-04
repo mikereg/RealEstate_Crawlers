@@ -90,27 +90,3 @@ for f in feats:
     df[f] = pp.extract_FeatList(df, f)
 
 df.to_csv('QLC Rent - {}.csv'.format(date.today()))
-
-
-
-# len(df['RefNo'])
-# len(list(set(df['RefNo'])))
-
-# prop_dict = {}
-# r = requests.get(url+prop_urls[0])
-# soup = BeautifulSoup(r.content, 'lxml')
-# prop_dict['URL'] = url
-# prop_dict['RefNo'] = soup.find('h5', class_ = 'retail-pink-small').text
-# prop_dict['Type'] = soup.find('h2').text.split('in')[0]
-# prop_dict['Location'] = soup.find('h2').text.split('in')[1]
-# details_window = soup.find('div', class_ = 'col-md-6 col-lg-4 col-sm-12').find_all('div', class_ = 'row')
-# prop_dict['SQM'] = details_window[0].find_all('h2', class_ = 'vat-mo')[0].text.replace('sqm', '')
-# prop_dict['Price'] = details_window[0].find_all('h2', class_ = 'vat-mo')[1].text.replace('€','').replace('/mo', '')
-# prop_dict['Agent'] = soup.find('h3', class_ = 'agent-name-text').text
-# prop_dict['PricePerSQM'] = details_window[1].find('h2', class_ = 'vat-mo').text.replace('€','')
-# features_window = soup.find('div', class_ = 'features-white').find('div', class_ = 'tab-content').find_all('div', class_ = 'col-md-3 col-6')
-# features_window
-# description_window = soup.find('div', class_ = 'features-white').find('div', class_ = 'tab-content').find('div', class_ = 'tab-pane fade')
-# description_window.text.strip()
-# prop_dict['Features'] = [feat.text for feat in features_window.find_all('div', class_ = 'col-md-3 col-6')]
-# prop_dict
