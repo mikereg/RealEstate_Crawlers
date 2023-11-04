@@ -1,0 +1,10 @@
+untitled0.py
+*.csv
+PM_temp.py
+*.ipynb
+Property_Market.py
+__pycache__
+ghostdriver.log
+nlp_functions.py
+PM_Scrape.py
+.DS_Store
